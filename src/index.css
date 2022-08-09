@@ -1,0 +1,41 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css' ;
+
+.navbar-brand img{
+  width: 50px;
+}
+html, body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+#root{
+  height: 100%;
+}
+.navbar-brand img{
+  width:45px;
+}
+.home-title{
+  font-family: 'Poiret One' , cursive;
+}
+.bg-primary{
+  background-color: #131823 !important;
+}
+.text-primary{
+  color: #131823 !important;
+}
+.illustration{
+  max-width: 325px;
+}
+.user-form-card{
+  min-height: 440px;
+}
+.coloring{
+  background: #DDE7F9;
+}
+.black:hover{
+  background-color: black;
+  color: white !important;
+}
