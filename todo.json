@@ -1,0 +1,150 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "john",
+      "email": "john@gmail.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "kevin singh",
+      "email": "kevin@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "himani",
+      "email": "himani@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "username": "puneet",
+      "email": "puneet@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "username": "raghu",
+      "email": "raghu@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 6,
+      "username": "gopu",
+      "email": "gopu@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "username": "ansh",
+      "email": "ansh@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "username": "geeta",
+      "email": "geeta@gmail.com",
+      "password": "admin",
+      "role": "user"
+    },
+    {
+      "id": 9,
+      "username": "Mukul Pahwa",
+      "email": "mukul@gmail.com",
+      "password": "admin",
+      "role": "user"
+    }
+  ],
+  "task": [
+    {
+      "id": 1,
+      "title": "clothes",
+      "description": "wash clothes no",
+      "date": "2022-05-11",
+      "reminder": "2022-05-28T10:54",
+      "userId": 3,
+      "createDate": "2022-08-07T13:16:05.487Z"
+    },
+    {
+      "id": 2,
+      "title": "tea ",
+      "description": "one time a day",
+      "date": "2022-05-19",
+      "reminder": "2022-05-27T13:05",
+      "userId": 1,
+      "createDate": "2022-08-07T13:17:21.505Z"
+    },
+    {
+      "id": 3,
+      "title": "eat timely",
+      "description": "eat 3 meals",
+      "date": "2022-05-26",
+      "reminder": "2022-05-11T18:53",
+      "userId": 2,
+      "createDate": "2022-08-07T13:17:35.692Z"
+    },
+    {
+      "id": 4,
+      "title": "study",
+      "description": "interviews coming",
+      "date": "2022-05-25",
+      "reminder": "2022-05-25T10:27",
+      "userId": 3,
+      "createDate": "2022-08-07T13:15:21.838Z"
+    },
+    {
+      "id": 5,
+      "title": "exercise",
+      "description": "gym classes",
+      "date": "2022-05-18",
+      "reminder": "2022-05-17T06:32",
+      "userId": 2,
+      "createDate": "2022-08-07T13:17:58.197Z"
+    },
+    {
+      "id": 6,
+      "title": "interviews",
+      "description": "debut infotech",
+      "date": "2022-05-24",
+      "reminder": "2022-05-20T11:43",
+      "userId": 3,
+      "createDate": "2022-08-07T13:15:07.261Z"
+    },
+    {
+      "id": 7,
+      "title": "to start react",
+      "description": "3 hours",
+      "date": "2022-05-25",
+      "reminder": "2022-06-03T14:25",
+      "userId": 7,
+      "createDate": "2022-08-07T13:18:14.908Z"
+    },
+    {
+      "id": 8,
+      "title": "movie",
+      "description": "kashmir files watched",
+      "date": "2022-05-21",
+      "reminder": "2022-05-21T21:00",
+      "userId": 2,
+      "createDate": "2022-08-07T13:16:57.201Z"
+    },
+    {
+      "id": 9,
+      "title": "hey its me",
+      "description": "wash clothes okay",
+      "date": "2022-07-19",
+      "reminder": "2022-07-16T08:57",
+      "userId": 3,
+      "createDate": "2022-08-07T13:14:54.975Z"
+    }
+  ]
+}

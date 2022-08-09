@@ -28,21 +28,31 @@ function reducer(state, action) {
 function TaskList() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const { userState, getTasks, getAdminTask, tasks } =
+  const { userState, getTasks, getAdminTask, tasks, getAdmin, userList } =
     useContext(TodoContext);
 
   const [search, setSearch] = useState("");
+  const [users, setUsers] = useState({});
 
-// console.log(userState)
+  // console.log(userState)
 
   useEffect(() => {
-      if (userState.currentUserRole==="admin") {
-        getAdminTask();
-      }if(userState.currentUserRole==="user") {
-        getTasks(userState.currentUserId);
-      }
-
+    if (userState.currentUserRole === "admin") {
+      getAdminTask();
+      getAdmin();
+    }
+    if (userState.currentUserRole === "user") {
+      getTasks(userState.currentUserId);
+    }
   }, [userState]);
+
+  useEffect(() => {
+    if (userList) {
+      setUsers(userList);
+    }
+  }, [userList]);
+
+  console.log(users);
 
   var filterList = tasks.filter(
     (task) => task.title.toLowerCase().indexOf(search.toLowerCase()) >= 0
@@ -77,9 +87,9 @@ function TaskList() {
         <table className="table table-dark p-5">
           <thead>
             <tr>
-              {/* <th>Id</th> */}
               <th>Title</th>
               <th>Description</th>
+              <th>UserName</th>
               <th>Date of Creation</th>
               <th>Reminder</th>
               {/* <th>Delete</th> */}
@@ -91,9 +101,15 @@ function TaskList() {
             {filterList.map((item, id) => {
               return (
                 <tr className="text-warning" key={id}>
-                  {/* <th scope="row">{item.id}</th> */}
+                  {/* <th scope="row">{item.userId}</th> */}
+
                   <td>{item.title}</td>
                   <td>{item.description}</td>
+                  {users.map((user) => {
+                    return (
+                      <>{user.id === item.userId && <td>{user.username}</td>}</>
+                    );
+                  })}
                   <td>{dateFormat(item.createDate)}</td>
                   <td>{dateFormat(item.reminder)}</td>
                   <td>
