@@ -89,7 +89,11 @@ function TaskList() {
             <tr>
               <th>Title</th>
               <th>Description</th>
-              <th>UserName</th>
+              {
+                userState.currentUserRole === 'admin' &&
+                <th>UserName</th>
+              }
+              
               <th>Date of Creation</th>
               <th>Reminder</th>
               {/* <th>Delete</th> */}
@@ -105,7 +109,8 @@ function TaskList() {
 
                   <td>{item.title}</td>
                   <td>{item.description}</td>
-                  {users.map((user) => {
+                 
+                  { userState.currentUserRole === 'admin' && users.map((user) => {
                     return (
                       <>{user.id === item.userId && <td>{user.username}</td>}</>
                     );
