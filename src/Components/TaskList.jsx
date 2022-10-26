@@ -32,7 +32,7 @@ function TaskList() {
     useContext(TodoContext);
 
   const [search, setSearch] = useState("");
-  const [users, setUsers] = useState({});
+  const [users, setUsers] = useState([]);
 
   // console.log(userState)
 
